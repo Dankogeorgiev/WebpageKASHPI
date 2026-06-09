@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кашпи — Красота за дома и градината</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (иконки) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-seedling"></i> Кашпи
+      </a>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#hero">Начало</a></li>
+          <li><a href="#about">За нас</a></li>
+          <li><a href="#products">Продукти</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-social">
+        <!-- ЗАМЕНИ # С РЕАЛНИЯ ЛИНК КЪМ FACEBOOK СТРАНИЦАТА -->
+        <a href="#facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <!-- ЗАМЕНИ # С РЕАЛНИЯ ЛИНК КЪМ INSTAGRAM ПРОФИЛА -->
+        <a href="#instagram" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <button id="menu-toggle" aria-label="Отвори меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Красота за дома<br />и градината</h1>
+      <p>Ръчно изработени кашпи за всеки интериор и екстериор.<br />Намерете перфектния дом за вашите цветя.</p>
+      <a href="#products" class="btn btn-primary">Виж продуктите</a>
+    </div>
+  </section>
+
+  <!-- ===================== ЗА НАС ===================== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <div class="image-placeholder">
+          <i class="fa-solid fa-leaf"></i>
+          <!-- ЗАМЕНИ С: <img src="images/about.jpg" alt="За нас" /> -->
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">За нас</span>
+        <h2>Вдъхновени от природата</h2>
+        <p>
+          Кашпи е марка, създадена с любов към растенията и красивия дом.
+          Предлагаме широка гама от кашпи — от елегантни интериорни модели
+          до издръжливи екстериорни решения.
+        </p>
+        <p>
+          Всеки продукт е внимателно подбран по качество, дизайн и
+          функционалност. Вярваме, че зеленината вкъщи прави живота по-хубав.
+        </p>
+        <a href="#contact" class="btn btn-outline">Свържете се с нас</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ПРОДУКТИ / ГАЛЕРИЯ ===================== -->
+  <section id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Нашите продукти</span>
+        <h2>Намерете своята кашпа</h2>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="image-placeholder small">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <!-- ЗАМЕНИ С: <img src="images/product1.jpg" alt="Кашпа 1" /> -->
+          </div>
+          <div class="product-info">
+            <h3>Кашпа "Tierra"</h3>
+            <p>Интериорна кашпа от теракота — топла и естествена.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="image-placeholder small">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Кашпа "Verde"</h3>
+            <p>Модерна зелена кашпа — идеална за трева и сукуленти.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="image-placeholder small">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Кашпа "Rustic"</h3>
+            <p>Екстериорна кашпа — устойчива на всякакво време.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="image-placeholder small">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Кашпа "Minimal"</h3>
+            <p>Чист минималистичен дизайн за модерния интериор.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="image-placeholder small">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Кашпа "Garden"</h3>
+            <p>Голяма градинска кашпа за балкони и тераси.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <div class="image-placeholder small">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3>Кашпа "Hanging"</h3>
+            <p>Висяща кашпа — красиво решение за малки пространства.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DANKOSYSTEMS БАНЕР ===================== -->
+  <section id="dankosystems">
+    <div class="container dankosystems-inner">
+      <div class="dankosystems-text">
+        <span class="section-tag light">Производство &amp; Опит</span>
+        <h2>Зад Кашпи стои DankoSystems</h2>
+        <p>
+          Кашпи е продукт на <strong>DankoSystems</strong> — компания с доказан
+          производствен капацитет и дългогодишен опит в изработката на
+          висококачествени продукти.
+        </p>
+        <a href="https://www.dankosystems.com" target="_blank" rel="noopener" class="btn btn-primary">
+          Посети DankoSystems <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <div class="dankosystems-logo">
+        <i class="fa-solid fa-industry"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== КОНТАКТИ ===================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Контакти</span>
+        <h2>Свържете се с нас</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Телефон</strong>
+              <!-- ЗАМЕНИ С РЕАЛНИЯ ТЕЛЕФОН -->
+              <p>+359 XX XXX XXXX</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Имейл</strong>
+              <!-- ЗАМЕНИ С РЕАЛНИЯ ИМЕЙЛ -->
+              <p>info@kashpi.bg</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Адрес</strong>
+              <!-- ЗАМЕНИ С РЕАЛНИЯ АДРЕС -->
+              <p>София, България</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <h3>Последвайте ни</h3>
+          <p>Открийте нашите продукти и вдъхновение в социалните мрежи.</p>
+          <div class="social-buttons">
+            <!-- ЗАМЕНИ # С РЕАЛНИЯ ЛИНК КЪМ FACEBOOK СТРАНИЦАТА -->
+            <a href="#facebook" target="_blank" rel="noopener" class="social-btn facebook">
+              <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+            <!-- ЗАМЕНИ # С РЕАЛНИЯ ЛИНК КЪМ INSTAGRAM ПРОФИЛА -->
+            <a href="#instagram" target="_blank" rel="noopener" class="social-btn instagram">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <i class="fa-solid fa-seedling"></i> Кашпи
+        </a>
+        <p>Красота за дома и градината.</p>
+        <p class="footer-dankosystems">
+          Продукт на <a href="https://www.dankosystems.com" target="_blank" rel="noopener">DankoSystems</a>
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#hero">Начало</a></li>
+          <li><a href="#about">За нас</a></li>
+          <li><a href="#products">Продукти</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social-section">
+        <h4>Социални мрежи</h4>
+        <div class="footer-social-icons">
+          <!-- ЗАМЕНИ # С РЕАЛНИЯ ЛИНК КЪМ FACEBOOK СТРАНИЦАТА -->
+          <a href="#facebook" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <!-- ЗАМЕНИ # С РЕАЛНИЯ ЛИНК КЪМ INSTAGRAM ПРОФИЛА -->
+          <a href="#instagram" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Кашпи. Всички права запазени.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
