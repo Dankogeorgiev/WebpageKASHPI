@@ -312,10 +312,21 @@ section {
   max-width: 700px;
 }
 
-.hero-content h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  margin-bottom: 20px;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+.hero-logo {
+  width: min(340px, 80vw);
+  height: auto;
+  margin: 0 auto 40px;
+  display: block;
+  mix-blend-mode: luminosity;
+  filter: brightness(1.15) contrast(1.1);
+  drop-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  margin-bottom: 36px;
+  opacity: 0.92;
+  font-weight: 300;
 }
 
 .hero-content p {
