@@ -402,15 +402,150 @@ section {
   padding: 20px;
 }
 
+.product-code {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--green-light);
+  margin-bottom: 6px;
+  font-family: 'Lato', sans-serif;
+}
+
+.product-code::before {
+  content: '№ ';
+}
+
 .product-info h3 {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 8px;
   color: var(--brown);
+  letter-spacing: 0.5px;
 }
 
 .product-info p {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--brown-light);
+  margin-bottom: 12px;
+}
+
+.product-options {
+  font-size: 0.75rem;
+  color: var(--green-dark);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-top: 1px solid var(--cream-dark);
+  padding-top: 10px;
+  margin-top: 4px;
+}
+
+/* ===================== HERO SECONDARY BUTTON ===================== */
+.hero-btn-secondary {
+  margin-left: 12px;
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+/* ===================== MATERIALS ===================== */
+#materials {
+  background: var(--cream);
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.material-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 22px;
+  border: 1px solid var(--cream-dark);
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.material-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.material-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 1.3rem;
+  color: var(--green);
+}
+
+.material-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--brown);
+}
+
+.material-card p {
+  font-size: 0.88rem;
+  color: var(--brown-light);
+  line-height: 1.6;
+}
+
+.colors-section {
+  text-align: center;
+}
+
+.colors-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-dark);
+  margin-bottom: 18px;
+}
+
+.color-swatches {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  cursor: default;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform var(--transition);
+}
+
+.swatch:hover {
+  transform: scale(1.12);
+}
+
+.swatch span {
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.68rem;
+  white-space: nowrap;
+  color: var(--brown-light);
+  font-weight: 700;
 }
 
 /* ===================== DANKOSYSTEMS ===================== */
@@ -639,8 +774,18 @@ section {
 }
 
 /* ===================== RESPONSIVE ===================== */
+@media (max-width: 1100px) {
+  .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .materials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -717,6 +862,20 @@ section {
 
   .products-grid {
     grid-template-columns: 1fr;
+  }
+
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-btn-secondary {
+    margin-left: 0;
+    margin-top: 12px;
+    display: inline-block;
+  }
+
+  .color-swatches {
+    gap: 20px;
   }
 
   .footer-inner {
